@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="test.SearchTest" duration-ms="23090" started-at="2018-10-12T00:44:56Z" finished-at="2018-10-12T00:45:19Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="23090" started-at="2018-10-12T00:44:56Z" finished-at="2018-10-12T00:45:19Z">
+      <class name="test.SearchTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:test.SearchTest@6b2fad11]" name="setup" is-config="true" duration-ms="7124" started-at="2018-10-12T00:44:56Z" finished-at="2018-10-12T00:45:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="blankSearch()[pri:1, instance:test.SearchTest@6b2fad11]" name="blankSearch" duration-ms="622" started-at="2018-10-12T00:45:03Z" finished-at="2018-10-12T00:45:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- blankSearch -->
+        <test-method status="PASS" signature="invalidSearchByZipcode()[pri:2, instance:test.SearchTest@6b2fad11]" name="invalidSearchByZipcode" duration-ms="2814" started-at="2018-10-12T00:45:04Z" finished-at="2018-10-12T00:45:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidSearchByZipcode -->
+        <test-method status="PASS" signature="validSearchByZipcode()[pri:3, instance:test.SearchTest@6b2fad11]" name="validSearchByZipcode" duration-ms="4790" started-at="2018-10-12T00:45:07Z" finished-at="2018-10-12T00:45:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validSearchByZipcode -->
+        <test-method status="PASS" signature="invalidsearchByAddress()[pri:4, instance:test.SearchTest@6b2fad11]" name="invalidsearchByAddress" duration-ms="3302" started-at="2018-10-12T00:45:11Z" finished-at="2018-10-12T00:45:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidsearchByAddress -->
+        <test-method status="PASS" signature="validsearchByAddress()[pri:5, instance:test.SearchTest@6b2fad11]" name="validsearchByAddress" duration-ms="4396" started-at="2018-10-12T00:45:15Z" finished-at="2018-10-12T00:45:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validsearchByAddress -->
+      </class> <!-- test.SearchTest -->
+    </test> <!-- Command line test -->
+  </suite> <!-- test.SearchTest -->
+</testng-results>

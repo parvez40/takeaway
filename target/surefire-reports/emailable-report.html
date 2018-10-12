@@ -9,14 +9,28 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="7">test.SearchTest</th></tr>
-<tr><td><a href="#t0">Command line test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num">23,090</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Command line test</a></td><td class="num">7</td><td class="num">0</td><td class="num attn">1</td><td class="num">31,961</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">test.SearchTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="5">test.SearchTest</td><td><a href="#m0">blankSearch</a></td><td rowspan="1">1539305103713</td><td rowspan="1">622</td></tr><tr class="passedeven"><td><a href="#m1">invalidSearchByZipcode</a></td><td rowspan="1">1539305104345</td><td rowspan="1">2814</td></tr><tr class="passedeven"><td><a href="#m2">invalidsearchByAddress</a></td><td rowspan="1">1539305111952</td><td rowspan="1">3302</td></tr><tr class="passedeven"><td><a href="#m3">validSearchByZipcode</a></td><td rowspan="1">1539305107161</td><td rowspan="1">4790</td></tr><tr class="passedeven"><td><a href="#m4">validsearchByAddress</a></td><td rowspan="1">1539305115254</td><td rowspan="1">4396</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">test.SearchTest</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Command line test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">test.SearchTest</td><td><a href="#m0">invalidSearchByZipcode</a></td><td rowspan="1">1539361171561</td><td rowspan="1">5012</td></tr><tr><th colspan="4">Command line test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">test.SearchTest</td><td><a href="#m1">blankSearch</a></td><td rowspan="1">1539361170434</td><td rowspan="1">1124</td></tr><tr class="passedeven"><td><a href="#m2">invalidSearchByRandomAndSpecialCharacters</a></td><td rowspan="1">1539361187047</td><td rowspan="1">2634</td></tr><tr class="passedeven"><td><a href="#m3">invalidSearchBySqlQuery</a></td><td rowspan="1">1539361189682</td><td rowspan="1">2143</td></tr><tr class="passedeven"><td><a href="#m4">invalidsearchByAddress</a></td><td rowspan="1">1539361180629</td><td rowspan="1">2543</td></tr><tr class="passedeven"><td><a href="#m5">searchInputLimit</a></td><td rowspan="1">1539361191826</td><td rowspan="1">2310</td></tr><tr class="passedeven"><td><a href="#m6">validSearchByZipcode</a></td><td rowspan="1">1539361176577</td><td rowspan="1">4051</td></tr><tr class="passedeven"><td><a href="#m7">validsearchByAddress</a></td><td rowspan="1">1539361183172</td><td rowspan="1">3875</td></tr></tbody>
 </table>
-<h2>Command line test</h2><h3 id="m0">test.SearchTest#blankSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">test.SearchTest#invalidSearchByZipcode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">test.SearchTest#invalidsearchByAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">test.SearchTest#validSearchByZipcode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">test.SearchTest#validsearchByAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Command line test</h2><h3 id="m0">test.SearchTest#invalidSearchByZipcode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: autoCompleteDropDown (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-JLPCQCSL&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5784, moz:profile: C:\Users\parve\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 624c70a7-06c7-4852-8a70-1b46f5c629f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at page_objects.LieferendoHomePage.waitForElement(LieferendoHomePage.java:31)
+	at page_objects.LieferendoHomePage.suggestionsText(LieferendoHomePage.java:72)
+	at test.SearchTest.invalidSearchByZipcode(SearchTest.java:63)
+... Removed 34 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">test.SearchTest#blankSearch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">test.SearchTest#invalidSearchByRandomAndSpecialCharacters</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">test.SearchTest#invalidSearchBySqlQuery</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">test.SearchTest#invalidsearchByAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">test.SearchTest#searchInputLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">test.SearchTest#validSearchByZipcode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">test.SearchTest#validsearchByAddress</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

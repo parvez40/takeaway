@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="test.SearchTest" time="15.916" errors="0" skipped="0">
+<testsuite tests="8" failures="1" name="test.SearchTest" time="23.685" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_171\jre\bin"/>
@@ -27,7 +27,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="user.variant" value=""/>
     <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="D:\Eclipse Work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8730685942694860798.tmp"/>
+    <property name="classworlds.conf" value="D:\Eclipse Work\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf5968790030836347192.tmp"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
     <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_171\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_181/bin/server;C:/Program Files/Java/jre1.8.0_181/bin;C:/Program Files/Java/jre1.8.0_181/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Common Files\lenovo\easyplussdk\bin;C:\Program Files\nodejs\;C:\Program Files\Geth;C:\WINDOWS\System32\OpenSSH\;C:\Users\parve\AppData\Local\Android\Sdk;C:\Program Files\Java\jdk1.8.0_171;C:\Users\parve\AppData\Local\Microsoft\WindowsApps;C:\Users\parve\AppData\Roaming\npm;C:\Maven\apache-maven-3.5.4\bin;C:\Python27;C:\Python27\Scripts;;D:\Eclipse\eclipse-jee-oxygen-2-win32-x86_64\eclipse;;."/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
@@ -61,9 +61,51 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="test.SearchTest" name="blankSearch" time="0.626"/>
-  <testcase classname="test.SearchTest" name="invalidSearchByZipcode" time="2.815"/>
-  <testcase classname="test.SearchTest" name="validSearchByZipcode" time="4.787"/>
-  <testcase classname="test.SearchTest" name="invalidsearchByAddress" time="3.292"/>
-  <testcase classname="test.SearchTest" name="validsearchByAddress" time="4.396"/>
+  <testcase classname="test.SearchTest" name="blankSearch" time="1.128"/>
+  <testcase classname="test.SearchTest" name="invalidSearchByZipcode" time="5.012">
+    <failure message="Expected condition failed: waiting for visibility of element located by By.className: autoCompleteDropDown (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-JLPCQCSL&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5784, moz:profile: C:\Users\parve\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 624c70a7-06c7-4852-8a70-1b46f5c629f3" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: autoCompleteDropDown (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
+System info: host: &apos;LAPTOP-JLPCQCSL&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_171&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5784, moz:profile: C:\Users\parve\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 624c70a7-06c7-4852-8a70-1b46f5c629f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at page_objects.LieferendoHomePage.waitForElement(LieferendoHomePage.java:31)
+	at page_objects.LieferendoHomePage.suggestionsText(LieferendoHomePage.java:72)
+	at test.SearchTest.invalidSearchByZipcode(SearchTest.java:63)
+</failure>
+    <system-err>1539361171698	Marionette	DEBUG	[6442450945] Received DOM event beforeunload for https://www.lieferando.de/
+1539361171898	Marionette	DEBUG	[6442450945] Received DOM event pagehide for https://www.lieferando.de/
+1539361171903	Marionette	DEBUG	[6442450945] Received DOM event unload for https://www.lieferando.de/
+1539361172565	Marionette	DEBUG	[6442450945] Received DOM event DOMContentLoaded for https://www.lieferando.de/
+1539361172614	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450951
+1539361172615	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450949
+1539361172615	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450960
+1539361172615	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450958
+1539361172615	Marionette	DEBUG	[6442450945] Received observer notification outer-window-destroyed for 6442450955
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=219815965, line 1: unreachable code after return statement
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=219815965, line 1: unreachable code after return statement
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=1&amp;cb=219815965 line 1 &gt; eval, line 1: unreachable code after return statement
+1539361173070	Marionette	DEBUG	[6442450945] Received DOM event pageshow for https://www.lieferando.de/
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=DC-4952451, line 74: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=DC-4952451, line 74: unreachable code after return statement
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=2&amp;cb=2024362603, line 1: unreachable code after return statement
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=2&amp;cb=2024362603, line 1: unreachable code after return statement
+JavaScript warning: https://www.lieferando.de/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&amp;ns=2&amp;cb=2024362603 line 1 &gt; eval, line 1: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=DC-4952451, line 74: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=DC-4952451, line 74: unreachable code after return statement
+</system-err>
+  </testcase>
+  <testcase classname="test.SearchTest" name="validSearchByZipcode" time="4.048"/>
+  <testcase classname="test.SearchTest" name="invalidsearchByAddress" time="2.541"/>
+  <testcase classname="test.SearchTest" name="validsearchByAddress" time="3.875"/>
+  <testcase classname="test.SearchTest" name="invalidSearchByRandomAndSpecialCharacters" time="2.633"/>
+  <testcase classname="test.SearchTest" name="invalidSearchBySqlQuery" time="2.143"/>
+  <testcase classname="test.SearchTest" name="searchInputLimit" time="2.305"/>
 </testsuite>

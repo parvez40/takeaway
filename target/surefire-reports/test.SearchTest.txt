@@ -1,4 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: test.SearchTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 23.818 sec
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 32.593 sec <<< FAILURE!
+invalidSearchByZipcode(test.SearchTest)  Time elapsed: 5.012 sec  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.className: autoCompleteDropDown (tried for 3 second(s) with 500 milliseconds interval)
+Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
+System info: host: 'LAPTOP-JLPCQCSL', ip: '192.168.0.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 62.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 5784, moz:profile: C:\Users\parve\AppData\Loca..., moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: XP, platformName: XP, platformVersion: 10.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 624c70a7-06c7-4852-8a70-1b46f5c629f3
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:81)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:271)
+	at page_objects.LieferendoHomePage.waitForElement(LieferendoHomePage.java:31)
+	at page_objects.LieferendoHomePage.suggestionsText(LieferendoHomePage.java:72)
+	at test.SearchTest.invalidSearchByZipcode(SearchTest.java:63)
+

@@ -6,10 +6,8 @@
       <class name="test.SearchTest">
         <methods>
           <include name="setup"/>
-          <include name="validSearchByZipcode"/>
           <include name="invalidSearchByZipcode"/>
-          <include name="invalidsearchByAddress"/>
-          <include name="validsearchByAddress"/>
+          <include name="closeDriver"/>
         </methods>
       </class> <!-- test.SearchTest -->
     </classes>

@@ -36,7 +36,7 @@ public class SearchTest {
 	}
 
 	@Test(priority = 1)
-	public void blankSearch() {
+	public void blank_Search() {
 
 		LieferendoHomePage objBlankSearch = new LieferendoHomePage(driver);
 		objBlankSearch.clickSearchSubmitButton();
